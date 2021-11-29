@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartagena Survival Zombie</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.png">
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+    <div id="header">
+        <div id="menuizquierdo">
+            <button class="botondesplegable" id="botoninicio"><a href="index.html">Inicio</a></button>
+
+            <div class="desplegable" id="lugares">
+                <button class="botondesplegable" id="botonlugares">Lugares</button>
+
+                <div class="contenido-desplegable" id="desplegable-lugares">
+                    <a href="mapazombie/alimentacion.html">Alimentación</a>
+                    <a href="mapazombie/hospedaje.html">Hospedaje</a>
+                    <a href="mapazombie/salud.html">Salud</a>
+                    <a href="mapazombie/transportes.html">Transportes</a>
+                    <a href="mapazombie/ocio.html">Ocio</a>
+                    <a href="mapazombie/armamento.html">Armamento</a>
+                </div>
+            </div>
+
+            <div class="desplegable" id="quienes">
+                <button class="botondesplegable" id="botonquienes">Quiénes Somos</button>
+                <div class="contenido-desplegable" id="desplegable-quienes">
+                    <a href="mapazombie/organiza.html">Organiza</a>
+                    <a href="mapazombie/contacto.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="menucentro">
+            <img src="imagenes/zombie.png" id="zombie" width="50" height="auto">
+        </div>
+
+        <div id="menuderecho">
+            <button class="botondesplegable" id="botonlogin"><a href="mapazombie/login.html">Log in</a></button>
+            <button class="botondesplegable" id="botonregistrate"><a href="mapazombie/registro.html">Regístrate</a></button>
+        </div>
+
+    </div>
+
+
+    <div id="footer">
+        <div id="menufooter">
+            <button class="botondesplegable" id="acercade"><a href="mapazombie/acercade.html">Acerca de</a></button>
+            <button class="botondesplegable" id="datos"><a href="mapazombie/datos.html">Tratamiento de datos</a></button>
+            <button class="botondesplegable" id="cookies"><a href="mapazombie/cookies.html">Aviso de cookies</a></button>
+        </div>
+
+        <div id="nightmode">
+            <p id="noche">Modo noche</p>
+            <span>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+            </label>
+            </span>
+        </div>
+    </div>
+
+    <div align="center" id="main">
+        <h1>Cartagena Survival Map</h1>
+        <h3>Sobrevive a un ataque zombie refugiándote en Cartagena</h3>
+
+
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="900" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Cartagena&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div id="triplemenu" align="left">
+            <div class="box" id="informacion">
+                <img src="imagenes/info.png" width="60" height="auto">
+                <h1>Información</h1>
+                <h4>¡Descubre Cartagena Survival Map! Un portal en el que podrás descubrir lugares que te serán útiles en caso de vivir un ataque zombie. Pero, ten cuidado...¡ningún lugar es seguro del todo!</h4>
+            </div>
+
+            <div class="box" id="dondeir">
+                <img src="imagenes/campana.png" width="60" height="auto">
+                <h1>Dónde ir</h1>
+                <h4>En este portal podrás encontrar lugares de ocio y restauración, hospitales, medios de transporte disponible e incluso tiendas de armas. ¡Todo es poco para ser el último en pie!</h4>
+            </div>
+
+            <div class="box" id="participa">
+                <img src="imagenes/cartera.png" width="60" height="auto">
+                <h1>¡Participa!</h1>
+                <h4>Regístrate en el portal para formar parte de una comunidad de más de 800 personas. Califica los lugares y deja reviews para compartir tu opinión con otros visitantes.</h4>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

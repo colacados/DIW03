@@ -1,0 +1,328 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f313d;
+    align-items: center;
+    height: 9%;
+}
+
+#botonregistrate a {
+    color: #1f313d;
+}
+
+#aqui {
+    color: black;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1f313d;
+    display: flex;
+}
+
+#main {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h1 {
+    color: #192730;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.desplegable {
+    display: inline-block;
+    position: relative;
+}
+
+.contenido-desplegable {
+    display: none;
+    position: absolute;
+    background-color: #49708a;
+}
+
+.contenido-desplegable a {
+    font-size: 1.6em;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.contenido-desplegable a:hover {
+    background-color: #6ca2c7;
+}
+
+.botondesplegable {
+    color: white;
+    background-color: transparent;
+    font-size: 1.6em;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 500px;
+    width: 900px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 900px;
+}
+
+#menuizquierdo {
+    margin-left: 2em;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menuderecho {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    margin-right: 3em;
+}
+
+#zombie {
+    align-self: center;
+}
+
+button {
+    padding: 0.5em 1.3em 0.5em 1.3em;
+    border: none;
+}
+
+.botondesplegable:hover {
+    background-color: #49708a;
+}
+
+.desplegable:hover .contenido-desplegable {
+    display: block;
+}
+
+#republica {
+    float: right;
+    margin: -2em;
+}
+
+#botonregistrate {
+    background-color: white;
+    border-radius: 4px;
+}
+
+#menufooter {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+#nightmode {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+#noche {
+    color: white;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 8px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #89ff7e;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#triplemenu {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    padding: 0em 9em 0em 9em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#boxes {
+    display: flex;
+    padding: 2em 10em 2em 10em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.restbox {
+    padding: 0.5em;
+    margin-left: 2em;
+    margin-bottom: 3em;
+    display: inline-block;
+    max-width: 400px;
+    border: solid;
+    border-width: thin;
+    border-color: lightgrey;
+}
+
+.restbox img {
+    float: left;
+}
+
+.doublebutton {
+    display: flex;
+    justify-content: center;
+}
+
+.botonmapa {
+    background-color: lightgrey;
+    border-radius: 4px;
+    margin-right: 2em;
+}
+
+.botonmapa a {
+    color: #1f313d;
+}
+
+.botonreservar {
+    background-color: #1f313d;
+    color: white;
+    border-radius: 4px;
+}
+
+.botonmapa:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.botonreservar:hover {
+    background-color: #5b798b;
+}
+
+.bigbox {
+    max-width: 500px;
+    padding: 2em;
+    border: solid;
+    border-width: thin;
+    border-color: lightgrey;
+}
+
+.bigbox input[type=submit],
+.contactbox input[type=submit] {
+    background-color: cadetblue;
+    border-radius: 4px;
+    width: 100%;
+    margin: 1em 0em 1em 0em;
+    font-size: 1em;
+    padding: 13px 0px;
+    color: white;
+    border: none;
+}
+
+.bigbox button {
+    background-color: cadetblue;
+    border-radius: 4px;
+    margin: 1em 0em 1em 0em;
+    font-size: 1em;
+}
+
+.bigbox input[type=email],
+.bigbox input[type=password],
+.contactbox input[type=email],
+.contactbox input[type=text] {
+    width: 100%;
+    margin: 1em 0em 1em 0em;
+    font-size: 1em;
+    padding: 13px 0px;
+}
+
+#crearcuenta {
+    width: 100%;
+    padding: 13px;
+    margin: 2em 0em 2em 0em;
+    font-size: 1em;
+}
+
+#terminosycondiciones {
+    display: flex;
+}
+
+.contactbox {
+    max-width: 750px;
+    padding: 2em;
+    border: solid;
+    border-width: thin;
+    border-color: lightgrey;
+}
